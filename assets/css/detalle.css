@@ -1,0 +1,245 @@
+@font-face{
+    font-family: 'netflix';
+    src: url('../../fonts/AvenirNextLTPro-Regular.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'netflix';
+    src: url('../../fonts/AvenirNextLTPro-Bold.otf');
+    font-weight: 700;
+    font-style: normal;
+}
+body {
+    background: black;
+    color: white;
+    margin: 0;
+    font-family: netflix;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.header {
+    padding: 15px 15px 100px;
+    position: relative;
+    z-index: 2;
+}
+.featured {
+    margin-top: -155px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 197px;
+}
+.featured-details {
+   position: absolute;
+   top: 430px;
+   bottom: 0;
+    left: 0;
+    right: 0;
+   margin-top: 4px;
+}
+.title{
+    padding: 0px 25px 0px;
+}
+.tag{
+    display: flex;
+    color: #606060;
+    padding: 5px 5px 5px 0px;
+}
+.tag:first-child{
+    color: #71D074;
+}
+.tag:nth-child(3){
+    background: #606060;
+    color: white;
+    align-items: center;
+    padding: 5px 5px 5px 5px;
+    border-radius: 3px;  
+}
+.tag:nth-child(5){
+    color: white;
+    border:1px solid #606060;
+    color: white;
+    align-items: center;
+    padding: 2px 3px 2px 3px;
+    border-radius: 3px; 
+}
+.tags {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    padding: 0px 25px 10px;
+}
+.featured-actions {
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0px 25px 100px;
+}
+.button{
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0px 5px 0px;
+    border-radius: 3px;
+}
+.button-secondary{
+    background: #606060;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0px 5px 0px;
+    border-radius: 3px;
+}
+.button::before{
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+.button-secondary::before{
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+.icon-play::before{
+    background: url(../../images/icons/play.svg);
+}
+.icon-dowload::before{
+    background: url(../../images/icons/download.svg);
+}
+.detail{
+    padding: 0px 25px 5px 25px;
+}
+.description{
+    color: #606060;
+}
+.action-item{
+    color: #606060;
+}
+.action-item path{
+    fill: #6e6e6e;
+}
+.action-item:hover :is(path, span){
+    fill: white;
+    color: white;
+}
+.featured-item{
+    padding: 0px 25px 0px 25px;
+    align-items: center;
+    padding-bottom: 1em;
+}
+.buttons{
+    background: none;
+    color: white;
+    font-size: 1.1em;
+    min-width: 100px;
+    cursor: pointer;
+    border: none;
+}
+.buttons::before{
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+.button-second{
+    background: none;
+    color: white;
+    font-size: 1.1em;
+    min-width: 100px;
+    cursor: pointer;
+    border: none;
+}
+.button-second::before{
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+.item-plus::before{
+    background: url('../../images/icons/plus.svg');
+}
+.item-like::before{
+    background: url('../../images/icons/like.svg');
+}
+.item-enviar::before{
+    background: url('../../images/icons/email-send.svg');
+}
+.line{
+    height: 5px;
+    width: 30%;
+    border: none;
+    margin-left: 27px;
+    background-color: red;
+}
+.list-content{
+    white-space: nowrap;
+    overflow-x: auto;
+    
+}
+.list-item{
+    display: inline-block;
+    margin-left: 10px;
+}
+.list-item:first-child{
+    margin: 0;
+}
+.list{
+    padding: 0 1em;
+    margin-left: 10px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.img{
+    height: 286px;
+    width: 200px
+}
+.footer{
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    padding: 1em 0 0;
+}
+.tab-list{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    list-style: none;
+    color: #6e6e6e;
+    padding-bottom: 1em;
+}
+.tab-list a{
+    color: #6e6e6e;
+}
+.tab-item{
+    text-align: center;
+    font-size: .9em;
+}
+.tab-item svg{
+    display: block;
+    margin: auto;
+}
+.tab-item path{
+    fill: #6e6e6e;
+}
+.tab-item:hover :is(path, span){
+    fill: white;
+    color: white;
+}
